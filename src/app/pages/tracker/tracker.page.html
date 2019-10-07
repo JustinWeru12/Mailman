@@ -1,9 +1,42 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>tracker</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-
-</ion-content>
+    <ion-toolbar>
+    <ion-buttons slot="start">
+    <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>New Letter</ion-title>
+    </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+    <ion-item>
+    <ion-label position="stacked">Letter Name</ion-label>
+    <ion-input
+    [(ngModel)]="letterName"
+    type="text"
+    placeholder="What's your letter's name?"
+    > </ion-input>
+    </ion-item>
+    <ion-item>
+    <ion-label position="stacked">Tracking Number</ion-label>
+    <ion-input
+    [(ngModel)]="letterNumber"
+    type="number"
+    placeholder="What is your Tracking Number?"
+    > </ion-input>
+    </ion-item>
+    <ion-item>
+    <ion-label>Letter Date</ion-label>
+    <ion-datetime
+    [(ngModel)]="letterDate"
+    displayFormat="D MMM, YY"
+    pickerFormat="DD MMM YYYY"
+    min="2017"
+    max="2020-12-31"
+    > </ion-datetime>
+    </ion-item>
+    <ion-button
+    expand="block"
+    (click)="createLetter(letterName, letterDate, letterNumber)"
+    >
+    Create Letter
+    </ion-button>
+    </ion-content>

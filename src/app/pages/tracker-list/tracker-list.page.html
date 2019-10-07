@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-toolbar>
+    <ion-buttons slot="start">
+    <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Your Letters</ion-title>
+    </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+    <ion-list>
+    <ion-list-header> <ion-label>Your next letters</ion-label>
+    </ion-list-header>
+    <ion-item
+    tappable
+    *ngFor="let letter of letterList"
+    routerLink="/letter-detail/{{ letter.id }}"
+    >
+    <ion-label>
+    <h2>{{letter?.name}}</h2>
+    <p>Number: <strong>${{letter?.number}}</strong></p>
+    <p>Date: <strong>{{letter?.date}}</strong></p>
+    </ion-label>
+    </ion-item>
+    </ion-list>
+    </ion-content>

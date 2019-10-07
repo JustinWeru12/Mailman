@@ -1,4 +1,5 @@
 <ion-header>
+
     <ion-toolbar>
     <ion-title></ion-title>
     <ion-buttons slot="end">
@@ -8,6 +9,14 @@
     </ion-buttons>
     </ion-toolbar>
     </ion-header>
+    <ion-content class="ion-padding">
+      <ion-button expand="block" color="primary" routerLink="/pages/tracker-create">
+      Add a new Letter
+      </ion-button>
+      <ion-button expand="block" color="primary" routerLink="/pages/tracker-list">
+      See your Letters
+      </ion-button>
+      </ion-content>
 <ion-tabs>
     <button ion-button  (click)="logout()">Logout</button>
     <ion-tab-bar slot="bottom" color=primary>
