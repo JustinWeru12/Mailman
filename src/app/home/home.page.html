@@ -1,14 +1,35 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
-</ion-content>
+    <ion-toolbar>
+    <ion-title></ion-title>
+    <ion-buttons slot="end">
+    <ion-button routerLink="/profile">
+    <ion-icon slot="icon-only" name="person"></ion-icon>
+    </ion-button>
+    </ion-buttons>
+    </ion-toolbar>
+    </ion-header>
+<ion-tabs>
+    <button ion-button  (click)="logout()">Logout</button>
+    <ion-tab-bar slot="bottom" color=primary>
+      <ion-tab-button tab="Home">
+        <ion-icon ios="ios-home" md="md-home"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="Tracker">
+        <ion-icon ios="ios-paw" md="md-paw" ></ion-icon>
+        <ion-label>Tracker</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="Finder">
+        <ion-icon ios="ios-paper-plane" md="md-paper-plane"></ion-icon>
+        <ion-label>Finder</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="About">
+        <ion-icon ios="ios-help-circle" md="md-help-circle"></ion-icon>
+        <ion-label>About</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+    
+  </ion-tabs>

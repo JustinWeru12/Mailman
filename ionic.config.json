@@ -1,5 +1,7 @@
 {
   "name": "Mailman",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

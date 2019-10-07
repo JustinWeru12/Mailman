@@ -1,0 +1,7 @@
+{
+  "appId": "com.example.app",
+  "appName": "Mailman",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}

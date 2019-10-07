@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Mailman</string>
+    <string name="title_activity_main">Mailman</string>
+    <string name="package_name">com.justin.mailman</string>
+    <string name="fileprovider_authority">com.justin.mailman.fileprovider</string>
+    <string name="custom_url_scheme">com.justin.mailman</string>
+</resources>
